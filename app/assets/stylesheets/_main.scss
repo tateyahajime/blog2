@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  // width: 100vw;
+  // height: 100vh;
+}
+.header {
+  width: 100vw;
+  height: 80px;
+  background-color: white;
+  &__name {
+    font-size: 50px;
+    padding: 0 40px;
+    font-family: 'Lilita One';
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    
+    &-menu {
+      @keyframes typing { from { width: 0; } }
+      @keyframes caret { 50% { border-color: transparent; } }
+      font-family: monospace; 
+      width: 43ch;
+      border-right: .08em solid;
+      overflow: hidden;
+      font-size: 4em;
+      white-space: nowrap;
+      animation: typing 5s steps(11, end), caret .5s step-end infinite;
+      display: flex;
+      font-size:20px;
+      font-family: 'M PLUS Rounded 1c';
+      margin-top: 20px;
+      &-ul {
+        display: flex;
+        list-style: none;
+        margin-right: 10px;
+        &-home {
+          margin-right: 10px;
+          &-a {
+            text-decoration: none;
+            color: black
+          }
+        }
+        &-login {
+          margin-right: 10px;
+          text-decoration: none;
+          &-a {
+            text-decoration: none;
+            color: black
+          }
+        }
+        &-birthday {
+          margin-right: 10px;
+          &-a {
+            text-decoration: none;
+            color: black
+          }
+        }
+        &-topics {
+          margin-right: 10px;
+          &-a {
+            text-decoration: none;
+            color: black
+          }
+        }
+      }
+    }
+  }
+}
+.main {
+  .image {
+    width: calc( 100vw - 800px);
+    // height: calc( 100vh -300px);
+    height: auto ;
+    transform: rotate( 90deg );
+    margin: 100px;
+  }
+}
+

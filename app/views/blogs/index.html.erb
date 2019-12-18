@@ -1,0 +1,46 @@
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Lilita+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+</head>
+<body>
+  <%= render "header"%>
+    <div class="main">
+      <%# <div id="slideshow">
+        <%= image_tag 'hinata2.jpeg', class: "active" %>
+        <%# <%= image_tag 'hinata3.jpeg' %>
+        <%# <%= image_tag 'kuru1.jpeg' %> 
+        <%# <%= image_tag 'kuru2.jpeg' %> 
+        <%# <%= image_tag 'sora.jpeg' %>  
+        <%# <img src="sora.jpg" alt="画像1" class="active">
+        <img src="個人アプリ/hinata2.jpeg" alt="画像2">
+        <img src="hinata3.jpeg" alt="画像3">
+        <img src="kuru1.jpeg" alt="画像4">
+        <img src="kuru2.jpeg" alt="画像5"> %>
+      <%# </div> %>
+      <script type="text/javascript">
+      function slideSwitch() {
+        var $active = $('#slideshow img.active');
+
+        if ( $active.length == 0 ) $active = $('#slideshow img:last');
+
+        var $next =  $active.next().length ? $active.next()
+          : $('#slideshow img:first');
+
+        $active.addClass('last-active');
+
+        $next.css({opacity: 0.0})
+          .addClass('active')
+          .animate({opacity: 1.0}, 1000, function() {
+            $active.removeClass('active last-active');
+          });
+      }
+
+      $(function() {
+        setInterval( "slideSwitch()", 3000 );
+      });
+      </script>
+      <%# <img src="hinata3.jpeg" alt="画像1" class="active"> %>
+      <%= image_tag 'hinata3.jpeg', class: "image" %>
+    </div>
+</body>
+
