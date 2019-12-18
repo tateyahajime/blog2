@@ -1,0 +1,48 @@
+.title {
+  margin: 50px 50px 50px 500px;
+  font-size: 50px;
+}
+
+.name {
+  width: calc(100vw - 300px);
+  height: 60px;
+  font-size: 30px;
+  margin: 50px 50px 50px 100px;
+  font-family: 'Lakki Reddy', cursive;
+}
+.image {
+  width: calc(100vw - 300px);
+  height: 60px;
+  margin: 0 50px 50px 100px;
+  font-size: 30px;
+  font-family: 'Lakki Reddy', cursive;
+}
+.text {
+  width: calc(100vw - 300px);
+  height: 60px;
+  margin: 0 50px 50px 100px;
+  font-size: 20px;
+  font-family: 'Lakki Reddy', cursive;
+}
+.btn {
+  display: inline-block;
+  // max-width: 180px;
+  width: 400px;
+  height: 100px;
+  // text-align: left;
+  border: 2px solid black;
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: .4s;
+  margin-left: 600px;
+  font-family: 'Lakki Reddy', cursive;
+}
+.btn:hover {
+  background-color: #9ec34b;
+  border-color: #cbe585;
+  color: #FFF;
+}
