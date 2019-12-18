@@ -1,10 +1,12 @@
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Lilita+One&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+  
 </head>
 <body>
   <%= render "header"%>
     <div class="main">
+      <div class="main__image">
+        <%= image_tag 'hinata3.jpeg', class: "main__image-1" %>
+      </div>
       <%# <div id="slideshow">
         <%= image_tag 'hinata2.jpeg', class: "active" %>
         <%# <%= image_tag 'hinata3.jpeg' %>
@@ -40,7 +42,6 @@
       });
       </script>
       <%# <img src="hinata3.jpeg" alt="画像1" class="active"> %>
-      <%= image_tag 'hinata3.jpeg', class: "image" %>
     </div>
 </body>
 
