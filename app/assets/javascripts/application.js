@@ -12,5 +12,21 @@
 //
 //= require rails-ujs
 //= require activestorage
-//= require turbolinks
 //= require_tree .
+//= require jquery
+
+$(function() {
+  $('.main__image').slick({
+      dots: true,
+      autoplay: true,
+      autoplaySpeed: 5000,
+  });
+});
+
+$(function() {
+  $('.message').slick({
+      dots: true,
+      autoplay: true,
+      autoplaySpeed: 5000,
+  });
+});

@@ -1,12 +1,2 @@
 <%= render "header"%>
 
-<div class="list">
-  <% @blogs.each do |blog|%>
-    <div class="list__post" style="background-image: url(<%= blog.image %>);">
-      <%= simple_format(blog.text) %>
-      <span class="list__post-name">
-        <%= blog.name %>
-      </span>
-    </div>
-  <% end %>
-</div>

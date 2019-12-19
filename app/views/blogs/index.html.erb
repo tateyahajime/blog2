@@ -1,39 +1,15 @@
-<head>
-  
-</head>
-<body>
-  <%= render "header"%>
-    <div class="main">
-      <div class="main__image"> 
-        <%= image_tag 'hinata3.jpeg', class: "main__image-1" %> 
-        <%= image_tag 'kuru1.jpeg', class: "main__image-2" %> 
-        <%= image_tag 'kuru2.jpeg', class: "main__image-3" %> 
-        <%= image_tag 'hinata2.jpeg', class: "main__image-4" %>  
-      </div> 
+<%= render "header"%>
 
-
-      <script type="text/javascript">
-      function slideSwitch() {
-        var $active = $('#slideshow img.active');
-
-        if ( $active.length == 0 ) $active = $('#slideshow img:last');
-
-        var $next =  $active.next().length ? $active.next()
-          : $('#slideshow img:first');
-
-        $active.addClass('last-active');
-
-        $next.css({opacity: 0.0})
-          .addClass('active')
-          .animate({opacity: 1.0}, 1000, function() {
-            $active.removeClass('active last-active');
-          });
-      }
-
-      $(function() {
-        setInterval( "slideSwitch()", 3000 );
-      });
-      </script>
+<div class="list">
+  <% @blogs.each do |blog|%>
+    <div class="list__post" style="background-image: url(<%= blog.image %>);">
+      <%= blog.name %>
+      <%= blog.created_at.strftime("%Y-%m-%d %H:%M") %>
+      <span class="list__post-text">
+        <%= blog.text %>
+      </span>
+        <div class="list__post-name-time">
+        </div>
     </div>
-</body>
-
+  <% end %>
+</div>
