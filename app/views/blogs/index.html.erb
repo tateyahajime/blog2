@@ -4,21 +4,14 @@
 <body>
   <%= render "header"%>
     <div class="main">
-      <div class="main__image">
-        <%= image_tag 'hinata3.jpeg', class: "main__image-1" %>
-      </div>
-      <%# <div id="slideshow">
-        <%= image_tag 'hinata2.jpeg', class: "active" %>
-        <%# <%= image_tag 'hinata3.jpeg' %>
-        <%# <%= image_tag 'kuru1.jpeg' %> 
-        <%# <%= image_tag 'kuru2.jpeg' %> 
-        <%# <%= image_tag 'sora.jpeg' %>  
-        <%# <img src="sora.jpg" alt="画像1" class="active">
-        <img src="個人アプリ/hinata2.jpeg" alt="画像2">
-        <img src="hinata3.jpeg" alt="画像3">
-        <img src="kuru1.jpeg" alt="画像4">
-        <img src="kuru2.jpeg" alt="画像5"> %>
-      <%# </div> %>
+      <div class="main__image"> 
+        <%= image_tag 'hinata3.jpeg', class: "main__image-1" %> 
+        <%= image_tag 'kuru1.jpeg', class: "main__image-2" %> 
+        <%= image_tag 'kuru2.jpeg', class: "main__image-3" %> 
+        <%= image_tag 'hinata2.jpeg', class: "main__image-4" %>  
+      </div> 
+
+
       <script type="text/javascript">
       function slideSwitch() {
         var $active = $('#slideshow img.active');
@@ -41,7 +34,6 @@
         setInterval( "slideSwitch()", 3000 );
       });
       </script>
-      <%# <img src="hinata3.jpeg" alt="画像1" class="active"> %>
     </div>
 </body>
 
