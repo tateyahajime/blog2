@@ -1,5 +1,7 @@
 class BlogsController < ApplicationController
 
+  def home
+  end
 
   def index
     @blogs = Blog.all
@@ -29,7 +31,7 @@ class BlogsController < ApplicationController
   private
 
   def blog_params
-    params.require(:blog).permit(:name, :image, :text)
+    params.require(:blog).permit(:name, :image, :text, :created_at)
   end
 
 end
