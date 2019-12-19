@@ -20,12 +20,16 @@ class BlogsController < ApplicationController
   end
 
   def show
-    @blogs = Blog.all
+    @blog = Blog.find(params[:id])
+  end
+
+  def destroy
   end
 
   private
 
   def blog_params
-    params.permit(:name, :image, :text)
+    params.require(:blog).permit(:name, :image, :text)
+  end
 
 end
