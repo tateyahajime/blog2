@@ -1,0 +1,21 @@
+.show {
+  height: calc(100vh - 80px);
+  width: 100vw;
+  &__title {
+    font-size: 40px;
+    margin-left: 45%;
+  }
+  &__image {
+    width: 800px;
+    height: 400px;
+    background-color: blanchedalmond;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+  &__name {
+    width: 100px;
+    height: 40px;
+    background-color: blanchedalmond;
+    margin
+  }
+}
