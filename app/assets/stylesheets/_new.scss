@@ -16,6 +16,15 @@
   margin: 0 50px 50px 100px;
   font-size: 30px;
   font-family: 'Lakki Reddy', cursive;
+  &__label {
+    // color: black;
+    &-icon {
+      font-size: 30px;
+    }
+    &-file {
+      // display: none;
+    }
+  }
 }
 .text {
   width: calc(100vw - 300px);

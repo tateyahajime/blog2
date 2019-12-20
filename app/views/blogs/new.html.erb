@@ -4,6 +4,10 @@
 <%= form_with model: @blog, local: true do |f|%>
   <%= f.text_field :name, placeholder: "name: kuru hinata", class: "name" %>
   <%= f.text_field :image, placeholder: "IMAGE URL", class: "image" %>
+  <%# <%= f.label :image, class: "image__label" do %>
+    <%# <%= icon("far", 'image', class: "image__label-icon") %>
+    <%# <%= f.file_field :image, class: "image__label-file" %> 
+  <%# <% end %> 
   <%= f.text_area :text, placeholder: "COMMENT", rows: "3", class: "text" %>
   <%= f.submit "PUSH ME", class: "btn"%>
 <% end %>
