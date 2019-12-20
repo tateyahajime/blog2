@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  root "blogs#home"
+  root to:"blogs#home"
   resources :blogs
 end

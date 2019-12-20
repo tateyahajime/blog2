@@ -12,10 +12,10 @@ body {
   &__image {
     margin: 0 auto;
     padding-top: 20px;
-    // width: calc(100vw - 800px);
-    // height: calc(100vh - 250px);
+    background-size: cover;
+    background-position: center;
     width: 800px;
-    height: 500px;
+    height: 600px;
     object-fit: cover;
 
     &-1 {
