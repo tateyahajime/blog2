@@ -16,6 +16,12 @@
       &-show {
         text-decoration: none;
         color: black;
+        transition: .4s;
+      }
+      &-show:hover {
+        background-color: black;
+        border-color: black;
+        color: #FFF;
       }
       &-text {
         font-size: 15px;
