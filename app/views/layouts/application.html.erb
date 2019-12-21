@@ -17,6 +17,24 @@
   </head>
 
   <body>
+    <div class="header">
+      <div class="header__name">kuruhina
+        <div class="header__name-menu">
+          <ul class="header__name-menu-ul">
+          <li class="header__name-menu-ul-home">
+            <%= link_to "HOME", "/", class: "header__name-menu-ul-home-a" %>
+          </li>
+          <li class="header__name-menu-ul-post">
+            <%= link_to "POST", new_blog_path, class: "header__name-menu-ul-post-a"%>
+          </li>
+          <li class="header__name-menu-ul-list">
+            <%= link_to "LIST", blogs_path, class: "header__name-menu-ul-list-a"%>
+          </li>
+          <li class="header__name-menu-ul-topics">BIRTHDAY</li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <%= yield %>
   </body>
 </html>
