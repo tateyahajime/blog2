@@ -1,5 +1,5 @@
 .title {
-  margin: 50px 50px 50px 500px;
+  margin: 50px 50px 50px 40%;
   font-size: 50px;
 }
 
@@ -10,19 +10,22 @@
   margin: 50px 50px 50px 100px;
   font-family: 'M PLUS Rounded 1c';
 }
+
 .image {
   width: calc(100vw - 300px);
   height: 60px;
   margin: 0 50px 50px 100px;
   font-size: 30px;
   font-family: 'M PLUS Rounded 1c';
+  position: relative;
   &__label {
-    // color: black;
+    color: black;
+    position: absolute;
     &-icon {
       font-size: 30px;
     }
     &-file {
-      // display: none;
+      display: none;
     }
   }
 }
@@ -32,6 +35,7 @@
   margin: 0 50px 50px 100px;
   font-size: 20px;
   font-family: 'M PLUS Rounded 1c';
+  
 }
 .btn {
   display: inline-block;
@@ -45,7 +49,7 @@
   padding: 8px 16px;
   border-radius: 4px;
   transition: .4s;
-  margin-left: 600px;
+  margin-left: 34%;
   font-family: 'M PLUS Rounded 1c';
 }
 .btn:hover {

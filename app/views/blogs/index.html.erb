@@ -1,17 +1,13 @@
-<%= render "header"%>
-
 <div class="lists">
   <% @blogs.each do |blog|%>
     <div class="lists__list">
-      <div class="lists__list-post" style="background-image: url(<%= blog.image %>);">
+      <%= link_to blog_path(blog.id), class: "lists__list-post-show" do %>
+        <div class="lists__list-post" style="background-image: url(<%= blog.image %>);">
       
-        <%= link_to "DETAILS", blog_path(blog.id), class: "lists__list-post-show" %>
-        <%= blog.name %>
-        <%= blog.created_at.strftime("%Y-%m-%d %H:%M") %>
-        <span class="lists__list-post-text">
-          <%= blog.text %>
-        </span>
-      </div>
+          <%= blog.name %>
+          <%= blog.created_at.strftime("%Y-%m-%d %H:%M") %>
+        </div>
+      <% end %>
     </div>
   <% end %>
 </div>
