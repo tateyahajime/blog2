@@ -4,7 +4,7 @@ class BlogsController < ApplicationController
   end
 
   def index
-    @blogs = Blog.all
+    @blogs = Blog.includes(:user)
   end
 
   def new
@@ -13,6 +13,7 @@ class BlogsController < ApplicationController
 
   def create
     Blog.create(blog_params)
+    redirect_to blogs_path
   end
 
   def edit
@@ -38,7 +39,7 @@ class BlogsController < ApplicationController
   private
 
   def blog_params
-    params.require(:blog).permit(:name, :image, :text, :created_at)
+    params.require(:blog).permit(:name, :image, :text, :created_at).merge(user_id: current_user.id)
   end
 
 end

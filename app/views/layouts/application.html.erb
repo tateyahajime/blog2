@@ -5,7 +5,10 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=10.0, user-scalable=yes">
-
+    
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application' %>
@@ -30,6 +33,9 @@
               <%= link_to "LIST", blogs_path, class: "header__name-menu-ul-list-a"%>
             </li>
             <% if user_signed_in?%>
+              <li class="header__name-menu-ul-post">
+                <%= link_to current_user.nickname, user_path(current_user), class: "header__name-menu-ul-post-a"%>
+              </li>
               <li class="header__name-menu-ul-post">
                 <%= link_to "POST", new_blog_path, class: "header__name-menu-ul-post-a"%>
               </li>
