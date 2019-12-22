@@ -14,7 +14,7 @@
       @keyframes typing { from { width: 0; } }
       @keyframes caret { 50% { border-color: transparent; } }
       font-family: monospace; 
-      width: 43ch;
+      width: 76ch;
       border-right: .08em solid;
       overflow: hidden;
       font-size: 4em;
@@ -29,7 +29,33 @@
         list-style: none;
         margin-right: 10px;
         &-home {
-          margin-right: 10px;
+          margin-right: 50px;
+          &-a {
+            text-decoration: none;
+            color: black;
+            transition: .4s;
+          }
+          &-a:hover {
+            background-color: black;
+            border-color: black;
+            color: #FFF;
+          }
+        }
+        &-login {
+          margin-right: 50px;
+          &-a {
+            text-decoration: none;
+            color: black;
+            transition: .4s;
+          }
+          &-a:hover {
+            background-color: black;
+            border-color: black;
+            color: #FFF;
+          }
+        }
+        &-signin {
+          margin-right: 50px;
           &-a {
             text-decoration: none;
             color: black;
@@ -42,7 +68,7 @@
           }
         }
         &-post {
-          margin-right: 10px;
+          margin-right: 50px;
           text-decoration: none;
           &-a {
             text-decoration: none;
@@ -56,7 +82,21 @@
           }
         }
         &-list {
-          margin-right: 10px;
+          margin-right: 50px;
+          &-a {
+            text-decoration: none;
+            color: black;
+            transition: .4s;
+          }
+          &-a:hover {
+            background-color: black;
+            border-color: black;
+            color: #FFF;
+          }
+        }
+        &-signout {
+          margin-right: 50px;
+          text-decoration: none;
           &-a {
             text-decoration: none;
             color: black;
@@ -69,7 +109,7 @@
           }
         }
         &-topics {
-          margin-right: 10px;
+          margin-right: 50px;
           transition: .4s;
           &-a {
             text-decoration: none;
