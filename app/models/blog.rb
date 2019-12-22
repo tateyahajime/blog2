@@ -1,5 +1,6 @@
 class Blog < ApplicationRecord
 
-  validates :image, :name, presence: true
+  validates :image, presence: true
+  belongs_to :user
 
 end
