@@ -3,13 +3,13 @@
   font-size: 50px;
 }
 
-.name {
-  width: calc(100vw - 300px);
-  height: 60px;
-  font-size: 30px;
-  margin: 50px 50px 50px 100px;
-  font-family: 'M PLUS Rounded 1c';
-}
+// .name {
+//   width: calc(100vw - 300px);
+//   height: 60px;
+//   font-size: 30px;
+//   margin: 50px 50px 50px 100px;
+//   font-family: 'M PLUS Rounded 1c';
+// }
 
 .image {
   width: calc(100vw - 300px);
@@ -22,7 +22,9 @@
     color: black;
     position: absolute;
     &-icon {
-      font-size: 30px;
+      font-size: 200px;
+      margin-left: 33%;
+      cursor: pointer;
     }
     &-file {
       display: none;

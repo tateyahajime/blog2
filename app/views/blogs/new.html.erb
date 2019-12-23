@@ -2,10 +2,11 @@
 <div class="title">POSTING</div>
 
 <%= form_with model: @blog, local: true do |f|%>
-  <%= f.text_field :name, placeholder: "name: kuru hinata", class: "name" %>
-  <div class="aa">
+  <%# <%= f.text_field :name, placeholder: "name: kuru hinata", class: "name" %> 
+  <div class="title__image">
     <%= f.label :image, placeholder: "IMAGE URL", class: "image" do %>
-    <%# <%= f.label :image, class: "image__label" do %> %>
+    
+    <%# <%= f.label :image, class: "image__label" do %> 
       <%= icon("far", 'image', class: "image__label-icon") %>
       <%= f.file_field :image, class: "image__label-file"  %>
     <% end %>

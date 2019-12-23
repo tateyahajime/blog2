@@ -6,12 +6,13 @@
     margin-left: 45%;
   }
   &__image {
-    width: 800px;
-    height: 400px;
+    width: 1200px;
+    height: 500px;
     background-color: blanchedalmond;
     margin: 0 auto;
     margin-top: 40px;
     background-size: cover;
+    background-size: contain;
     background-position: center;
   }
   &__name {

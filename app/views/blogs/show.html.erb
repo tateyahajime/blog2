@@ -5,22 +5,20 @@
 
   <div class="show__image" style="background-image: url(<%= @blog.image %>);">
   </div>
-  <div class="show__name">
-    <%# <%= @blog.name %> 
-  </div>
   <div class="show__time">
     <%= @blog.created_at.strftime("%Y-%m-%d %H:%M") %>
   </div>
   <div class="show__comment">
     <%= @blog.text %>
   </div>
-
-  <div class="show__btn">
-    <div class="show__btn-edit">
-      <%= link_to "EDIT", edit_blog_path(@blog.id), class: "show__btn-edit-btn"%>
+  <% if user_signed_in? && current_user.id == @blog.user_id %>
+    <div class="show__btn">
+      <div class="show__btn-edit">
+        <%= link_to "EDIT", edit_blog_path(@blog.id), class: "show__btn-edit-btn"%>
+      </div>
+      <div class="show__btn-destroy">
+        <%= link_to "DELETE", blog_path(@blog.id), method: :delete, class: "show__btn-destroy-btn"%>  
+      </div>
     </div>
-    <div class="show__btn-destroy">
-      <%= link_to "DELETE", blog_path(@blog.id), method: :delete, class: "show__btn-destroy-btn"%>  
-    </div>
-  </div>
+  <% end %>
 </div>
