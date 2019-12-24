@@ -1,0 +1,16 @@
+<div class="title">
+  <%= @user.nickname %>さんの投稿一覧
+</div>
+<div class="lists">
+  <% @blogs.each do |blog|%>
+    <div class="lists__list">
+      <%= link_to blog_path(blog.id), class: "lists__list-post-show" do %>
+        <div class="lists__list-post" style="background-image: url(<%= blog.image %>);">
+        <%# <%= video_tag blog. blog.video.to_s,loop: true, controls: true, width: 550, id: "mv" %> 
+          <%= blog.user.nickname %>
+          <%= blog.created_at.strftime("%Y-%m-%d %H:%M") %>
+    </div>
+      <% end %>
+    </div>
+  <% end %>
+</div>

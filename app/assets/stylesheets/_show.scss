@@ -4,6 +4,7 @@
   &__title {
     font-size: 40px;
     margin-left: 45%;
+    padding-top: 100px;
   }
   &__image {
     width: 1200px;
@@ -14,6 +15,7 @@
     background-size: cover;
     background-size: contain;
     background-position: center;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
   }
   &__name {
     width: 150px;
@@ -23,13 +25,13 @@
     line-height: 40px;
   }
   &__time {
-    width: 150px;
+    width: 200px;
     height: 20px;
     margin: 0 auto;
     margin-top: 10px;
   }
   &__comment {
-    width: 200px;
+    width: 400px;
     height: 50px;
     margin: 0 auto;
     margin-top: 10px;
@@ -37,6 +39,9 @@
   &__btn {
     display: flex;
     justify-content: space-between;
+    position: relative;
+    bottom: 100px;
+    
     &-edit {
       &-btn {
         text-decoration: none;
@@ -68,4 +73,51 @@
       }
     }
   }
+  .containar {
+    width: 100%;
+    #comment_text {
+      width: 500px;
+      height: 50px;
+      margin-left: 32%;
+      font-size: 25px;
+    }
+    .tweet {
+      margin-left: 34%;
+    }
+    #blog_tweet {
+      width: 1000px;
+      height: 50px;
+      margin-left: 230px;
+      font-size: 30px;
+    }
+  }
+    .comment-btn {
+      text-decoration: none;
+        color: black;
+        padding: 30px;
+        border: 1px solid black;
+        transition: .4s;
+        margin-left: 44%;
+        margin-top: 20px;
+    }
+    .comment-btn:hover {
+      background-color: black;
+      border-color: black;
+      color: #FFF;
+      cursor: pointer ;
+    }
+    .comments {
+      width: 700px;
+      height: 170px;
+      overflow: scroll;
+      border: 1px solid;
+      margin-left: 25%;
+      margin-top: 30px;
+      font-size: 30px;
+
+      .comment__title {
+        margin-left: 32%;
+        font-size: 30px;
+      }
+    }
 }

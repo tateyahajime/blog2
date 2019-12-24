@@ -1,10 +1,13 @@
 class BlogsController < ApplicationController
 
+  before_action :set_action, only: [:edit, :show]
+  before_action :move_to_index, except: [:home, :index, :show]
+
   def home
   end
 
   def index
-    @blogs = Blog.includes(:user)
+    @blogs = Blog.includes(:user).order("created_at DESC")
   end
 
   def new
@@ -17,7 +20,7 @@ class BlogsController < ApplicationController
   end
 
   def edit
-    @blog = Blog.find(params[:id])
+   
   end
 
   def update
@@ -27,7 +30,8 @@ class BlogsController < ApplicationController
   end
 
   def show
-    @blog = Blog.find(params[:id])
+    @comment = Comment.new
+    @comments = @blog.comments.includes(:user)
   end
 
   def destroy
@@ -39,8 +43,15 @@ class BlogsController < ApplicationController
   private
 
   def blog_params
+    params.require(:blog).permit(:image, :text, :created_at, :video).merge(user_id: current_user.id)
+  end
 
-    params.require(:blog).permit(:image, :text, :created_at).merge(user_id: current_user.id)
+  def set_action
+    @blog = Blog.find(params[:id])
+  end
+
+  def move_to_index
+    redirect_to action: :index unless user_signed_in?
   end
 
 end

@@ -8,7 +8,7 @@
 
 <div class="form">
   <%= form_with(model: @blog, local: true) do |f|%>
-    <%= f.text_field :image, placeholder: "IMAGE URL", class: "form__image" %>
+    <%# <%= f.text_field :image, placeholder: "IMAGE URL", class: "form__image" %> 
     <%= f.text_area :text, placeholder: "COMMENT", class: "form__comment" %>
     <%= f.submit "PUSH ME", class: "update__btn" %>
   <% end %>

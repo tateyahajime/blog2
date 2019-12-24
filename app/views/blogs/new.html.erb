@@ -7,8 +7,14 @@
     <%= f.label :image, placeholder: "IMAGE URL", class: "image" do %>
     
     <%# <%= f.label :image, class: "image__label" do %> 
-      <%= icon("far", 'image', class: "image__label-icon") %>
+      <%= icon("fas fa-camera", 'image', class: "image__label-icon") %>
       <%= f.file_field :image, class: "image__label-file"  %>
+    <% end %>
+  </div>
+  <div class="title__video">
+    <%= f.label :video, placeholder: "IMAGE URL", class: "image" do %>
+      <%= icon("fas fa-tv", 'video', class: "image__label-icon") %>
+      <%= f.file_field :video, class: "image__label-file"  %>
     <% end %>
   </div>
   <%= f.text_area :text, placeholder: "COMMENT", rows: "3", class: "text" %>
