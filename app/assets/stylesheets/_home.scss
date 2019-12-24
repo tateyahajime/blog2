@@ -9,6 +9,8 @@ body {
 .main {
   width: 100vw;
   height: calc(100vh - 80px);
+  // background-image: url(family.jpeg);
+  // // background-size:  cover;   
   &__image {
     margin: 0 auto;
     background-size: cover;
@@ -16,6 +18,7 @@ body {
     width: 750px;
     height: 550px;
     object-fit: cover;
+    margin-top: 60px;
 
     &-1 {
       transform: rotate( 90deg );
@@ -51,15 +54,8 @@ body {
   .message {
     font-size: 35px;
     font-family: 'Kosugi Maru', sans-serif;
-    // margin: 0 auto;
-    color: white;
-    &__text {
-      background: black;
-      display: inline-block;
-    }
-    &__text1 {
-      background: black;
-      display: inline-block;
-    }
+    color: black;
+    // margin-left: 200px;
   }
+  
 }
