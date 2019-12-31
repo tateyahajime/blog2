@@ -16,7 +16,7 @@
       @keyframes typing { from { width: 0; } }
       @keyframes caret { 50% { border-color: transparent; } }
       font-family: monospace; 
-      width: 76ch;
+      width: 50ch;
       border-right: .08em solid;
       overflow: hidden;
       font-size: 4em;
@@ -24,7 +24,7 @@
       animation: typing 5s steps(11, end), caret .5s step-end infinite;
       display: flex;
       font-size:30px;
-      font-family: 'M PLUS Rounded 1c';
+      font-family: 'Gloria Hallelujah', cursive;
       margin-top: 20px;
       &-ul {
         display: flex;
