@@ -1,6 +1,7 @@
 .title {
   margin: 100px 50px 0px 40%;
   font-size: 50px;
+  font-family: 'Gloria Hallelujah', cursive;
 }
 
 // .name {
@@ -36,7 +37,7 @@
   height: 60px;
   margin: 0 50px 50px 100px;
   font-size: 20px;
-  font-family: 'M PLUS Rounded 1c';
+  font-family: 'Gloria Hallelujah', cursive;
   
 }
 .btn {
@@ -52,7 +53,9 @@
   border-radius: 4px;
   transition: .4s;
   margin-left: 34%;
-  font-family: 'M PLUS Rounded 1c';
+  font-family: 'Gloria Hallelujah', cursive;
+  cursor: pointer;
+  border-radius: 50px;
 }
 .btn:hover {
   background-color: black;

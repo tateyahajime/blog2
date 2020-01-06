@@ -9,9 +9,7 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application' %>
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lilita+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c&display=swap" 
@@ -24,7 +22,7 @@
 
   <body>
     <div class="header">
-      <div class="header__name">kuruhina
+      <div class="header__name"><%= link_to "kuruhina", "/" %>
         <div class="header__name-menu">
           <ul class="header__name-menu-ul">
             <li class="header__name-menu-ul-home">
@@ -43,6 +41,9 @@
               <li class="header__name-menu-ul-signout">
                 <%= link_to "SING OUT", destroy_user_session_path , method: :delete, class: "header__name-menu-ul-signout-a" %>
               </li>
+              <li class="header__name-menu-ul-game">
+                <%= link_to "GAME", games_path , class: "header__name-menu-ul-game-a" %>
+              </li>
             <% else %>
               <li class="header__name-menu-ul-login">
                 <%= link_to "LOG IN",new_user_session_path , class: "header__name-menu-ul-login-a" %>
@@ -55,6 +56,8 @@
         </div>
       </div>
     </div>
+
+    
     <%= yield %>
   </body>
 </html>

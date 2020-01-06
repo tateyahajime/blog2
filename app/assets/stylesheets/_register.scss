@@ -6,24 +6,25 @@
     margin: 50px 50px 0px 40%;
     font-size: 50px;
     padding-top: 100px;
+    font-family: 'Gloria Hallelujah', cursive;
   }
   .field {
     width: calc(100vw - 300px);
     height: 60px;
     font-size: 30px;
     margin: 20px 50px 50px 100px;
-    font-family: 'M PLUS Rounded 1c';
+    font-family: 'Gloria Hallelujah', cursive;
     #user_email {
     width: calc(100vw - 300px);
     height: 60px;
     font-size: 30px;  
-    font-family: 'M PLUS Rounded 1c';
+    // font-family: 'M PLUS Rounded 1c';
     }
     #user_nickname {
     width: calc(100vw - 300px);
     height: 60px;
     font-size: 30px;  
-    font-family: 'M PLUS Rounded 1c';
+    // font-family: 'M PLUS Rounded 1c';
     }
   }
   #user_password {
@@ -47,6 +48,8 @@
       margin: 0 auto;
       transition: .4s;
       margin-left: 43%;
+      font-family: 'Gloria Hallelujah', cursive;
+      border-radius: 50px;
     }
     &__btn:hover {
       background-color: black;
@@ -62,9 +65,11 @@
   border: 1px solid black;
   margin: 0 auto;
   transition: .4s;
-&__:hover {
+  font-family: 'Gloria Hallelujah', cursive;
+  border-radius: 50px;
+}
+.link__actions:hover {
   background-color: black;
   border-color: black;
   color: #FFF;
-}
 }

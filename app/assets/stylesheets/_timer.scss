@@ -1,0 +1,35 @@
+.time {
+  text-align: center;
+  font-size: 100px;
+  
+  
+  #timer {
+    margin-top: 140px;
+  }
+
+  #start {
+    width: 110px;
+    font-size: 40px;
+    line-height: 40px;
+    background-color: greenyellow;
+    border-radius: 50px;
+  }
+
+  #stop {
+    width: 110px;
+    font-size: 40px;
+    line-height: 40px;
+    background-color: red;
+    border-radius: 50px;
+
+  }
+
+  #reset {
+    width: 110px;
+    font-size: 40px;
+    line-height: 40px;
+    background-color: #ffffff;
+    border-radius: 50px;
+
+  }
+}

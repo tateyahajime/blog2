@@ -5,15 +5,16 @@
   <%# <%= render "header"%>
     <div class="main">
       <div class="main__image"> 
-        <%= image_tag 'hinata5.jpeg', class: "main__image-1" %> 
-        <%= image_tag 'hinata1.jpeg', class: "main__image-3" %>
-        <%= image_tag 'kuru1.jpeg', class: "main__image-2" %>
-        <%= image_tag 'kuru2.jpeg', class: "main__image-4" %> 
-        <%= image_tag 'hinata2.jpeg', class: "main__image-5" %>
+        <img id="mypic" src="assets/hinata6.jpeg">
+        <%# <h2 id="story" 〜陽大（ひなた）〜></h2> %>
+        <%# <input type="button" value="戻る" onclick="go_back()">
+        <input type="button" value="進む" onclick="go_forward()"> %>
+
+        
       </div>
       <div class="message" >
       <%# style="background-color: black" %>
-        <h2 >〜陽大（ひなた）〜</h2>
+        <%# <h2 >〜陽大（ひなた）〜</h2>
         <p>1歳になりました。<br>
         歩き方の勉強中です！！！
         性格： 猪突猛進！ 負けず嫌い</p>
@@ -22,10 +23,82 @@
         <p>11歳の男の子<br>
         日々、ひなたに怯えながら生活してます。</p>
 
-        <h2>クルひなよろしくお願いします！！！</h2>
+        <h2>クルひなよろしくお願いします！！！</h2> %>
       </div>
     </div>
-    
+    <button>~PUSH~</button>
+    <style>
+      button {
+        width: 300px;
+        font-size: 50px;
+        font-family: 'Gloria Hallelujah', cursive;
+        cursor: pointer;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+        border-radius: 50px;
+        /* margin-left: 1100px; */
+        
+       
+
+      }
+      button:hover {
+        background-color: black;
+        border-color: black;
+        color: #FFF;
+      }
+    </style>
+    <script>
+
+    var pics_src = new Array("assets/hinata6.jpeg","assets/hinata5.jpeg", "assets/hinata1.jpeg", "assets/kuru1.jpeg", "assets/kuru2.jpeg", "assets/hinata2.jpeg");
+    var story = new Array("1歳になりました。", "歩き方の勉強中です！！！", "〜クルトン〜", "11歳の男の子", "日々、ひなたに怯えながら生活してます。", "クルひなよろしくお願いします！！！" );
+    var num = -1;
+
+    slideshow_timer();
+
+    function slideshow_timer(){
+      if (num == 5) {
+        num = 0;
+      }
+      else {
+          num ++;
+      }
+      document.getElementById("mypic").src=pics_src[num];
+      // document.getElementById("story").story[num];
+      setTimeout("slideshow_timer()",5000);
+      
+    }
+
+
+
+    // function go_forward(){
+    //   if (num == 5) {
+    //       num = 0;
+    //   }
+    //   else {
+    //       num ++;
+    //   }
+    //   document.getElementById("mypic").src=pics_src[num];
+    // }
+
+    // function go_back(){
+    //   if (num == 0) {
+    //       num = 5;
+    //   }
+    //   else {
+    //       num --;
+    //   }
+    //   document.getElementById("mypic").src=pics_src[num];
+    // }
+
+
+
+
+
+      var button = document.querySelector('button');
+      button.onclick = function() {
+        var name = prompt('あなたの名前は何ですか？');
+        alert('初めまして、' + name + 'さん、ひなたです！ひなたとクルお兄ちゃんの写真をいっぱい見ていってください！！');
+      }
+    </script>
 
     
 </body>
