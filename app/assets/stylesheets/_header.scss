@@ -4,6 +4,7 @@
   background-color: white;
   position: fixed;
   top: 0;
+  z-index: 1;
   &__name {
     font-size: 50px;
     padding: 0 40px;
@@ -11,6 +12,11 @@
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
+    a {
+      text-decoration: none;
+      color: black;
+
+    }
     
     &-menu {
       @keyframes typing { from { width: 0; } }
@@ -110,19 +116,19 @@
             color: #FFF;
           }
         }
-        &-topics {
+        &-game {
           margin-right: 50px;
-          transition: .4s;
+          text-decoration: none;
           &-a {
             text-decoration: none;
             color: black;
-            
+            transition: .4s;
           }
-        }
-        &-topics:hover {
-          background-color: black;
-          border-color: black;
-          color: #FFF;
+          &-a:hover {
+            background-color: black;
+            border-color: black;
+            color: #FFF;
+          }
         }
       }
     }

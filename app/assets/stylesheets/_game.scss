@@ -1,0 +1,47 @@
+.game {
+  width: 100%;
+  height: 100%;
+  font-family: 'Gloria Hallelujah', cursive;
+  &__title {
+    text-align: center;
+    margin-top: 150px;
+    font-size: 50px;
+  }
+  &__list {
+    font-size: 30px;
+    margin-top: 20px;
+    display: inline-block;
+    margin-left: 43%;
+    .number {
+      color: black;
+      display: block;
+      text-decoration: none;
+    }
+    .number:hover {
+      background-color: black;
+      color: #ffffff;
+    }
+    .type {
+      margin-top: 15px;
+      color: black;
+      display: block;
+      text-decoration: none;
+    }
+    .type:hover {
+      background-color: black;
+      color: #ffffff;
+    }
+  }
+  
+}
+
+.back {
+  font-size: 20px;
+  color: black;
+  font-family: 'Gloria Hallelujah', cursive;
+  text-decoration: none;
+}
+.back:hover {
+  background-color: black;
+  color: #ffffff;
+}

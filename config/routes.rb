@@ -5,4 +5,9 @@ Rails.application.routes.draw do
     resources :comments, only: :create
   end
   resources :users, only: :show
+  resources :games do
+    collection do
+      get :type, :timer
+    end
+  end
 end

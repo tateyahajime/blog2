@@ -15,11 +15,13 @@
     font-size: 30px;
     margin-left: 220px;
     margin-top: 20px;
+    font-family: 'Gloria Hallelujah', cursive;
   }
 }
 .update {
   width: 100%;
   margin-top: 100px;
+  
   &__btn {
     text-decoration: none;
     color: black;
@@ -27,6 +29,9 @@
     border: 1px solid black;
     margin: 0 auto;
     transition: .4s;
+    font-family: 'Gloria Hallelujah', cursive;
+    cursor: pointer;
+    border-radius: 50px;
   }
   &__btn:hover {
     background-color: black;
