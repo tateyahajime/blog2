@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   resources :users, only: :show
   resources :games do
     collection do
-      get :type, :timer
+      get :type, :timer, :number
     end
   end
 end

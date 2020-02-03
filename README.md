@@ -1,24 +1,52 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+#概要
+画像をアップできる。
+ユーザー登録ができる。
+簡単なゲームができる。（javascript)
 
-* Ruby version
+login
+email a@a
+Password aaaaaa
 
-* System dependencies
 
-* Configuration
+#作成背景
+子供の成長過程がわかるように写真をアップして私の親と嫁の親が見れるようにと考えました。
 
-* Database creation
+#工夫したポイント
+javascriptでスライドショーをつけたり、テックエキスパートでは習っていない技術を使いました。
 
-* Database initialization
+#今後実装したい機能
+携帯でも見れるようにしたい。
 
-* How to run the test suite
+#使用技術
+HTML CSS ruby rails javascript
 
-* Services (job queues, cache servers, search engines, etc.)
+＃DB設計
 
-* Deployment instructions
+##blogsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|user_id|integer|
+|text|string|
+|video|string||
 
-* ...
+##usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|email|string|
+|password|string|
+|nickname|string|
+|admin|boolean|default: :false|
+
+##commentsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|user_id|integer|
+|blog_id|integer|
+|text|text|
+
+
+
+

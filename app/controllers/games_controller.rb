@@ -12,5 +12,8 @@ class GamesController < ApplicationController
   def timer
   end
 
+  def number
+  end
+
 
 end
