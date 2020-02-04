@@ -8,12 +8,8 @@
 
 <div class="form">
   <%= form_with(model: @blog, local: true) do |f|%>
-    <%# <%= f.text_field :image, placeholder: "IMAGE URL", class: "form__image" %> 
+    
     <%= f.text_area :text, placeholder: "COMMENT", class: "form__comment" %>
     <%= f.submit "PUSH ME", class: "update__btn" %>
   <% end %>
 </div>
-
-<%# <div class="update">
-  <%= link_to "UPDATE", blog_path(@blog.id), method: :put, class: "update__btn" %>
-<%# </div> %> 
