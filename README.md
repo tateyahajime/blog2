@@ -18,7 +18,7 @@ http://13.114.10.196/
 
 # 工夫したポイント
 ## javascriptでスライドショーをつけたり、テックエキスパートでは習っていない技術を使いました。
-<img src="gazou1"> <img src="gazou2"> <img src="gazou3">
+<img src="assets/gazou1"> <img src="assets/gazou2"> <img src="assets/gazou3">
 ## javascriptの勉強のためゲームを作りました。
 https://gyazo.com/9faeefad7c46251928b5dc50a847f0a4
 
