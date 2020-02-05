@@ -19,7 +19,7 @@ http://13.114.10.196/
 # 工夫したポイント
 ## javascriptでスライドショーをつけたり、テックエキスパートでは習っていない技術を使いました。
 https://gyazo.com/bb58ee3768cd791fc557634d2fff305f
-## javascriptの勉強がてらゲームを作りました。
+## javascriptの勉強のためゲームを作りました。
 https://gyazo.com/9faeefad7c46251928b5dc50a847f0a4
 
 
